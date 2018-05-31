@@ -1,19 +1,16 @@
-const todoItems = [
+const todoData = [
   'write',
   'draw',
   'build app',
-  'shower'
+  'shower',
 ]
 
-let todoList = document.createElement("ol");
+let todoList = document.getElementById('todoList');
 
-todoItems.forEach(function(item, index){
-  let listItem =document.createElement("li");
-  let todoText = document.createTextNode(`${index}. ${item}`);
-  listItem.appendChild(todoText)
-  todoList.appendChild(listItem)
-  console.log(listItem)
-})
+for (var i = 0; i < todoData.length; i++) {
+  let newListItem = document.createElement("li");
+  let newContent = document.createTextNode(todoData[i]);
 
-
-console.log(todoList);
+  newListItem.appendChild(newContent);
+  todoList.appendChild(newListItem);
+}
