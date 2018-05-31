@@ -2,16 +2,35 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
+    <link rel="stylesheet" href="master.css">
+    <title>TODO LIST</title>
   </head>
   <body>
-    <ol>
 
-<li>todo_1</li>
-<li>todo_2</li>
-<li>todo_3</li>
-<li>todo_4</li>
+    <form>
+      <input type="text" id="new-todo" placeholder="What needs to be done?">
+    </form>
 
+    <ol id="todolist">
+      <li class="todo">
+        <input id="todo-1" type="checkbox">
+        <label for="todo-1">jump into unknown</label>
+      </li>
+      <li class="todo completed">
+        <input id="todo-2" type="checkbox" checked>
+        <label for="todo-2">visit gym for 24hrs</label>
+      </li>
     </ol>
+    <div class="footer">
+      Todo: <span id="todo-count">1</span> •
+      Done: <span id="completed-count">0</span> •
+      Total: <span id="total-count">1</span>
+    </div>
+  </div>
+
+    <script type="text/javascript" src="todo.js">
+
+    </script>
   </body>
 </html>
